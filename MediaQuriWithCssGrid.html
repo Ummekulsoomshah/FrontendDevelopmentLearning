@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                /* navbar 4 fr jgh lega  */
+                'navbar navbar navbar navbar'
+                /* section 3 fr or aside 1 fr jgh lega  */
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        aside {
+
+            grid-area: aside;
+        }
+
+        footer {
+
+            grid-area: footer;
+        }
+
+        @media (max-width:300px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+            
+            grid-template-areas:
+                /* navbar 4 fr jgh lega  */
+                'navbar navbar navbar navbar'
+                /* section 3 fr or aside 1 fr jgh lega  */
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            HOME about us community blog
+        </nav>
+        <section class="bdr">
+            <h1>learn css by heart</h1>
+        </section>
+        <aside class="bdr">
+            <h1>here are we</h1>
+        </aside>
+
+    </div>
+    <footer class="bdr" id="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui assumenda
+        velit!</footer>
+
+
+</body>
+
+</html>

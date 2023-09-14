@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+
+
+        }
+        #box-1{
+            /* z-index work only for position:relative,sticky,absolute,fixed not for static */
+            /* jiski bh z-index bri hogi wo dosre ke oper ajaega like box1 oper aega box 2 k */
+            z-index: 45;
+            background: green;
+            position: relative;
+            top: 49px;
+
+        }
+        #box-2{
+            background: blue;
+            z-index: 43;
+            position: relative;
+            top: 14px;
+
+        }
+        #box-3{
+            /* isse wo dba gayab hojaega pr uski jgh pe koi or nh aega */
+            /* visibility: hidden; */
+            /* isse koi or dbe ki jgh ajaega */
+            /* display: none; */
+            background: yellow;
+
+        }
+        #box-4{
+            background: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>

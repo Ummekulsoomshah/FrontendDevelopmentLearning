@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: burlywood;
+            /* negative value means uper ajega shadow */
+            /* or yh overrid bh hota h */
+            /* forth value charo trf phlane k lye */
+            /* box-shadow: -10px -13px  13px 13px cyan ; */
+            /* third value shadow ko blur krgi */
+            /* box-shadow: 10px 13px pink ; */
+            /* x y */
+            box-shadow: 39px 75px pink,14px 16px yellow;
+
+        }
+        /* text shadow */
+        .card h2{
+            text-shadow: 3px 5px 4px red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1"><h2>c++ course</h2><p>i am doing c++ along with this course Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus, accusantium excepturi, dignissimos, vero inventore ad explicabo obcaecati architecto cumque blanditiis similique est voluptates in repudiandae sequi officiis aspernatur optio.</p></div>
+        <div class="card" id="card-2"><h2>full stack dev couse</h2><p>I am on the way of becoming full stack developer Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus, accusantium excepturi, dignissimos, vero inventore ad explicabo obcaecati architecto cumque blanditiis similique est voluptates in repudiandae sequi officiis aspernatur optio.</p></div>
+        <div class="card" id="card-3"><h2>game dev</h2><p>I will start game dev in just some time Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellendus, accusantium excepturi, dignissimos, vero inventore ad explicabo obcaecati architecto cumque blanditiis similique est voluptates in repudiandae sequi officiis aspernatur optio.</p></div>
+    </div>
+</body>
+</html>

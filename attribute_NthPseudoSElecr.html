@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        /* or koi h1 wgera selector lene se km nh krga sirf target se hi krga */
+        a[target]{
+            font-size: 45px;
+            color: violet;
+        }
+        /* khud se set kya k */
+        a[target='k']{
+            font-size: 45px;
+            color: red;
+        }
+        input[type=password]{
+            color: green;
+            border:2px solid blue;
+
+        }
+        /* nith selector */
+        /* third pe apply css */
+        li:nth-child(3){
+            color: cyan;
+        }
+        /* hr dosre eleemt pe css */
+        li:nth-child(2n+0){
+            color: blueviolet;
+        }
+        /* ab phle 0 phr 1 rkhega and so on phr jo mlgea elemet no uspe lgega css */
+        li:nth-child(2n+2){
+            color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://goggle.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facbook.com" target="k">Go to facbook</a></h1>
+        <form action="" class="from-ctrl">
+            <input type="text" placeholder="Enter name">
+            <input type="password" placeholder="Enter password">
+            <input type="submit" value="submit">
+            
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.parent {
+    border: 4px solid rgb(179, 255, 0);
+  }
+  .child {
+    /* parent k hisab se child ka size 50% krdya */
+    width: 50%;
+    padding: 20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    /* pic ko right pr krdya */
+    float:right;
+  }
+ 

@@ -1,0 +1,7 @@
+h2 { 
+    text-decoration-line: line-through;
+    text-decoration-color: blue;
+    color:red;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+  }

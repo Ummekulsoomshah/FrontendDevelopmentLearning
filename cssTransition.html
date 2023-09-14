@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    #box{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: grey;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+        /* jb cursor box pe jaega toh yh chzn hongi */
+        /* transition-property: background-color;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        transition-delay: 1s; */
+        /* short hand */
+        /* yh krnse achank se size bra hoga */
+        /* transition: background-colro 2s ease-in-out 1s; */
+        /* yh krnse ak maner me ache se thora thora bra hoga size */
+        transition: all 2s ease-in-out 1s;
+
+    }
+    #box:hover{
+        background-color: grey;
+        height: 400px;
+        width:400px;
+        border-radius: 100px;
+        opacity: 1;
+    }
+</style>
+<body>
+    <h3>This is css transition</h3>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+    </div>
+
+
+</body>
+</html>

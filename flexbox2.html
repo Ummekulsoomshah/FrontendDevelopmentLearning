@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: column;
+            flex-direction: row-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* shorthand method for above two */
+            /* flex-flow: wrap-reverse wrap; */
+            /* 3 */
+            /* justify-content: center; */
+             /* khali dbo k drmyan ak jesa space baki dewar k drmyn koi khas space nh */
+             /* justify-content: space-between; */
+            /* ak dbe k asas ps same space h */
+
+            /* justify-content: space-around; */
+            
+            /* ak dbe or dosre dbe or ak dbe or dewr k bech me same space */
+            /* justify-content: space-evenly; */
+            /* 4 */
+            /* align-items: center;
+            align-items: flex-end; */
+            /* by default */
+            /* align-items: flex-start; */
+            /* 5 */
+            /* flex-wrap: wrap;
+            align-items: stretch; */
+        }
+        .item{
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 2px;
+            height: 43px;
+    width: 143px;
+        }
+        #item-1{
+            /* jiska order sbse bra hoga wo last me chlajaega */
+            /* order:40; */
+
+        }
+        #item-2{
+            /* yh krne se size horizontaly ra hojaega */
+            /* flex-grow: 2; */
+            /* yh krne se jb screen choti hogi toh yh wala box sbse choota h */
+            /* flex-shrink:6 ; */
+
+        }
+        #item-3{
+            /* yh ak by default h jb screen choti ho ya bri same hi rhega size */
+            /* when flex-direction is set to row it control width */
+            /* when flex-direction is set to column it control height */
+            /* flex-basis:320px ; */
+            /* ak hi br me teeno likhskte */
+            /* flex: flex grow flex shrink flex basis */
+            /* chooti screen me th end me jaega lkn bri me nh japega */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>this is about flexbox</h1>
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        
+        
+    </div>
+    
+</body>
+</html>

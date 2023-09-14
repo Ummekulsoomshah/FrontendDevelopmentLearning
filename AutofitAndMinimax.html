@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* justify-content: center; km tb krga jb  grid template-columns: 112px 112px 112px ; yh hoga  */
+            /* grid-template-columns: 112px 112px 112px ;
+            justify-content: center; */
+            /* agr 1 fr etc hpga px ki jgh to cenetr m nh krga  */
+            /* grid-template-columns: 1fr 1fr 1fr ; */
+            /* responisve ness  */
+            /* autofit jitna askte coulm me utna lao min400px ka ho colm or max 1 fr  */
+
+            grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+
+        }
+        .box{
+            border: 2px solid black;
+            background-color: blueviolet;
+            padding: 34px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+        <div class="box">item-11</div>
+        <div class="box">item-12</div>
+    </div>
+</body>
+</html>

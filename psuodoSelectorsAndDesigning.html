@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: aqua;
+            padding:6px;
+            /* border none krne se contact us se bh border ht jaega */
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+
+        }
+        a{
+            /* yh krne se read more kynke link tha toh uske niche ak line hogi toh usko htne k lye */
+            text-decoration: none;
+            /* jo text likha h read more kynke wo link tha toh bydefault uska color blue tha lkn ab black hiya */
+            color: black;
+        }
+        a:hover{
+            /* jb ab link read more pr jnge toh uska color  change ho */
+            color:aliceblue;
+            background-color: aquamarine;
+        }
+        a:visited{
+            /* mtlb jb usko click krln or link khollen toh uska color dosra hojae */
+            color: yellow;
+        }
+        a:active{
+            background-color: blue;
+        }
+        /* ab button element k andr wale contact us ko frk prega */
+        button:hover{
+            background-color:blue;
+        }
+        .btn:hover{
+            /* yh ab dono read mpre or contact us pr lgega bcz indono k ps h class btn */
+            background-color: pink;
+        }
+
+        .container{
+            border: 2px solid red;
+            background-color: rgb(223,245,201);
+            padding:34px;
+            margin:auto;
+            width:666px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>this is </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad, amet quae officiis nostrum harum totam ducimus modi soluta maxime iste dolor minima nemo, nisi consequatur, quisquam eos voluptatibus exercitationem enim sapiente earum adipisci.</p>
+        <a href="https://google.com" class="btn">read more</a>
+        <button class="btn">Contact us </button>
+    </div>
+    
+</body>
+</html>

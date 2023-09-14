@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        /* * {
+            box-sizing: border-box;
+        } */
+
+        .container {
+            width: 900px;
+            border: 4px solid purple;
+            /* margin: y x */
+            margin: auto;
+            font-family: 'Delicious Handrawn';
+            background-color: azure;
+
+
+
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(199, 95, 95);
+
+
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            /* agr float nh likha toh cptr or frt overlap krnge stnry k st */
+            /* float: right; */
+            /* clera right krne se right wale elements overlap nh krnge baki krnge lkn both krne se dono hi nh krnge overlap stnry se */
+            clear: both;
+            width: 100%;
+        }
+
+        p,
+        h1 {
+            text-align: left;
+            /* iske bd agr text allign left krndge toh overwrite hojaegi prop */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <h1 style="margin:auto;
+        width: 455px;
+        text-align: center;">
+            Welcom to umme's home
+        </h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, nulla
+                dolor ipsum fugiat voluptatem neque doloremque porro, tempora placeat molestiae voluptas nesciunt.
+                Mollitia voluptates optio suscipit excepturi harum beatae ducimus?</p>
+
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, nulla
+                dolor ipsum fugiat voluptatem neque doloremque porro, tempora placeat molestiae voluptas nesciunt.
+                Mollitia voluptates optio suscipit excepturi harum beatae ducimus?</p>
+        </div>
+        <div id="stationary" class="para">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+                nulla dolor ipsum fugiat voluptatem neque doloremque porro, tempora placeat molestiae voluptas nesciunt.
+                Mollitia voluptates optio suscipit excepturi harum beatae ducimus?</p>
+        </div>
+        <div id="stationary" class="para">
+            <h3>grossary</h3>
+            <p id="stationarypara" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+                nulla dolor ipsum fugiat voluptatem neque doloremque porro, tempora placeat molestiae voluptas nesciunt.
+                Mollitia voluptates optio suscipit excepturi harum beatae ducimus?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

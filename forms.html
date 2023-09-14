@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms making</h2>
+    <!-- form islye let take yh joh user fill kre data wo php me jake save hojae -->
+    <form action="backend.php">
+        <!-- div is used toh have lines in seperate line not in same line -->
+        <!-- label use krne se jb hm name ya aes text jo hm provide krre hn k wese dale user input me toh uspe click krne se wo input ala dbba bh select hojaega -->
+        <!-- or label k andr hi dlna hoga name wrna click krne kuch km nhhoga -->
+        <!-- or for or id me same chz rkhna hogi take kuch relation bne -->
+        <label for="name"> Name: </label>
+        <div>
+            <!-- required lgane se iske bina form submit nh hoga -->
+            <input type="text" name="myname" id="name" required>
+        </div>
+        <!-- br is using to have same space between lines pr yh hm css se krnge wese -->
+        <br>
+        <div>
+            Phone: <input type="tel" name="myphhone">
+        </div>
+        <br>
+        <div>
+            <!-- name jo sth aar h wo email k corresponding backend me store hoga -->
+            Email: <input type="email" name="myEmail">
+        </div>
+        <div>
+            File: <input type="file" name="file">
+        </div>
+        <div><label for="password">password</label><br>
+        <input type="password"></div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            your background: <textareaname="multiline"   rows="10"></textarea>
+        </div>
+        <div>
+            <!-- bonus k box me e bh dlskte hn pr koi or letter nh dalnge bcz e is recognized for 10 ki poer -->
+            Bonus: <input type="number" name="mybonus">
+        </div>
+        <br>
+        <div>
+            <!-- checked likhodo agr by default checked rkha h toh -->
+            are you eligible? : <input type="checkbox" name="myeligibliblity" checked>
+        </div>
+        <br>
+        <div>
+            <!-- you can chek only one of them ak kroge toh dosre unchek hojege bcz name same dya h hmne agr my gender kisi ko or kisi or ko dosra dete toh multiplr ko check krkste the -->
+            Male: <input type="radio" name="mygender"> Female: <input type="radio" name="mygender"> Other: <input
+                type="radio" name="mygender">
+        </div>
+        <br>
+        <div>
+           write about yourself: <br> <textarea name="mytext"  cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="yourcar" id="car">
+                <option value="suz" >Indica</option>
+                <!-- selected use krne se by default wohi select hojaega -->
+                <option value="swf"selected>Farari</option>
+            </select>
+            
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="Reset now">
+        </div>
+
+        
+
+
+    </form>
+
+
+
+</body>
+
+</html>

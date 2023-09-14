@@ -1,0 +1,9 @@
+
+    /* The element selector allows developers to select HTML elements based on their element type. --> */
+
+    /* <!-- For example, if you use p as the selector, the rule will apply to all p elements on the webpage. */
+    /* like agr hm selctor ki jgh p likhte toh sirf paragragh jo p se start hota h uspe yh colr apply hota lkn abhi h1 likha h toh heading h1 pe purple chrha color */
+    
+    h1{
+        color: purple;
+    }

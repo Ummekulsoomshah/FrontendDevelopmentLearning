@@ -1,0 +1,18 @@
+/* #blog div h1 {...called descendents
+     yh color sirf blog id element k andr jiske ps phe div hoga or phr h1 h usper apply hoga toh archive k ps div then h1 toh h blog nh h
+    iss se sirf today wether color hoga 
+
+    color: blue;
+  } */
+ /*#blog h1{ 
+     yh blog id elemt jinke ps h1 h unpr apply hoga isse today wether +latest hoga 
+    color: blue;
+ }/*
+ #blog > h1 {
+    isse sirf latest news color hoga....called child selector
+  color: blue;
+}
+a:hover {
+  color: orange;
+  background-color: brown;
+}
